@@ -9,8 +9,8 @@
 #import "DemoListFeedExpressViewController.h"
 #import "CellBuilder.h"
 #import "BYExamCellModel.h"
-#import <AdvanceSDK/AdvanceNativeExpress.h>
-#import <AdvanceSDK/AdvanceNativeExpressAd.h>
+#import <YunSuanSDK/AdvanceNativeExpress.h>
+#import <YunSuanSDK/AdvanceNativeExpressAd.h>
 
 @interface DemoListFeedExpressViewController () <UITableViewDelegate, UITableViewDataSource, AdvanceNativeExpressDelegate>
 @property (strong, nonatomic) UITableView *tableView;

@@ -7,7 +7,7 @@
 //
 
 #import "DemoInterstitialViewController.h"
-#import <AdvanceSDK/AdvanceInterstitial.h>
+#import <YunSuanSDK/AdvanceInterstitial.h>
 
 @interface DemoInterstitialViewController () <AdvanceInterstitialDelegate>
 @property (nonatomic, strong) AdvanceInterstitial *advanceInterstitial;

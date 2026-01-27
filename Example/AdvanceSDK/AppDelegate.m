@@ -8,7 +8,7 @@
 
 #import "AppDelegate.h"
 #import "ViewController.h"
-#import <AdvanceSDK/AdvSdkConfig.h>
+#import <YunSuanSDK/AdvSdkConfig.h>
 #import <AppTrackingTransparency/AppTrackingTransparency.h>
 #import <AdSupport/AdSupport.h>
 

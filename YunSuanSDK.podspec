@@ -8,18 +8,18 @@
 
 Pod::Spec.new do |s|
     
-    s.name             = 'AdvanceSDK'
+    s.name             = 'YunSuanSDK'
     s.version          = '5.2.1'
     s.license          = { :type => 'MIT', :file => 'LICENSE' }
-    s.summary          = 'bayescom iOS AdvanceSDK'
+    s.summary          = 'iOS YunSuanSDK'
     s.description      = <<-DESC
-    Blink倍联——免费透明的流量变现神器 
+    免费透明的流量变现神器 
     600+ 移动媒体选择的广告商业化管理工具，定制私有的移动媒体商业化解决方案。优质上游资源一网打尽，接入方式快速透明稳定。支持流量分发、渠道策略、精准投放、数据报表、排期管理、广告审核等全流程业务场景。
     DESC
     
-    s.homepage         = 'http://www.bayescom.com/'
-    s.author           = { 'bayescom' => 'http://www.bayescom.com/' }
-    s.source           = { :git => 'https://github.com/bayescom/AdvanceSDK.git', :tag => s.version.to_s }
+    s.homepage         = 'http://www.yunsuan.com/'
+    s.author           = { 'yunsuan' => 'http://www.yunsuan.com/' }
+    s.source           = { :git => 'https://github.com/shengxiang/yunsuan_ios_sdk.git', :tag => s.version.to_s }
     
     s.pod_target_xcconfig = { 'VALID_ARCHS' => 'x86_64 armv7 arm64' }
     s.platform     = :ios, "12.0"
@@ -27,68 +27,68 @@ Pod::Spec.new do |s|
     s.static_framework = true
     
     s.resource_bundles = {
-         'AdvanceSDK' => ['AdvanceSDK/Assets/**.*']
+         'YunSuanSDK' => ['YunSuanSDK/Assets/**.*']
        }
     
     # 默认的使用模块
     s.default_subspec = 'Core'
     
     s.subspec 'Core' do |core|
-        core.source_files = 'AdvanceSDK/Classes/Core/**/*.{h,m}'
+        core.source_files = 'YunSuanSDK/Classes/Core/**/*.{h,m}'
         core.frameworks = 'UIKit', 'Foundation', 'AdSupport'
     end
     
     s.subspec 'AdSpot' do |adSpot|
-        adSpot.dependency 'AdvanceSDK/Core'
-        adSpot.source_files = 'AdvanceSDK/Classes/AdSpot/**/*.{h,m}'
+        adSpot.dependency 'YunSuanSDK/Core'
+        adSpot.source_files = 'YunSuanSDK/Classes/AdSpot/**/*.{h,m}'
     end
     
     s.subspec 'MercuryAdapter' do |mer|
-        mer.dependency 'AdvanceSDK/AdSpot'
+        mer.dependency 'YunSuanSDK/AdSpot'
         mer.dependency 'MercurySDK'
-        mer.source_files = 'AdvanceSDK/Classes/Adapters/Mercury/**/*.{h,m}'
+        mer.source_files = 'YunSuanSDK/Classes/Adapters/Mercury/**/*.{h,m}'
     end
     
     s.subspec 'CSJAdapter' do |csj|
-        csj.dependency 'AdvanceSDK/AdSpot'
+        csj.dependency 'YunSuanSDK/AdSpot'
         csj.dependency 'Ads-CN-Beta/BUAdSDK'
-        csj.source_files = 'AdvanceSDK/Classes/Adapters/CSJ/**/*.{h,m}'
+        csj.source_files = 'YunSuanSDK/Classes/Adapters/CSJ/**/*.{h,m}'
     end
     
     s.subspec 'GDTAdapter' do |gdt|
-        gdt.dependency 'AdvanceSDK/AdSpot'
+        gdt.dependency 'YunSuanSDK/AdSpot'
         gdt.dependency 'GDTMobSDK'
-        gdt.source_files =  'AdvanceSDK/Classes/Adapters/GDT/**/*.{h,m}'
+        gdt.source_files =  'YunSuanSDK/Classes/Adapters/GDT/**/*.{h,m}'
     end
      
     s.subspec 'KSAdapter' do |ks|
-        ks.dependency 'AdvanceSDK/AdSpot'
+        ks.dependency 'YunSuanSDK/AdSpot'
         ks.dependency 'KSAdSDK'
-        ks.source_files = 'AdvanceSDK/Classes/Adapters/KS/**/*.{h,m}'
+        ks.source_files = 'YunSuanSDK/Classes/Adapters/KS/**/*.{h,m}'
     end
     
     s.subspec 'BDAdapter' do |bd|
-        bd.dependency 'AdvanceSDK/AdSpot'
+        bd.dependency 'YunSuanSDK/AdSpot'
         bd.dependency 'BaiduMobAdSDK'
-        bd.source_files =  'AdvanceSDK/Classes/Adapters/BD/**/*.{h,m}'
+        bd.source_files =  'YunSuanSDK/Classes/Adapters/BD/**/*.{h,m}'
     end
     
     s.subspec 'TanxAdapter' do |tanx|
-        tanx.dependency 'AdvanceSDK/AdSpot'
+        tanx.dependency 'YunSuanSDK/AdSpot'
         tanx.dependency 'TanxSDK'
-        tanx.source_files =  'AdvanceSDK/Classes/Adapters/TANX/**/*.{h,m}'
+        tanx.source_files =  'YunSuanSDK/Classes/Adapters/TANX/**/*.{h,m}'
     end
     
     s.subspec 'SigmobAdapter' do |sigmob|
-        sigmob.dependency 'AdvanceSDK/AdSpot'
+        sigmob.dependency 'YunSuanSDK/AdSpot'
         sigmob.dependency 'SigmobAd-iOS'
-        sigmob.source_files =  'AdvanceSDK/Classes/Adapters/Sigmob/**/*.{h,m}'
+        sigmob.source_files =  'YunSuanSDK/Classes/Adapters/Sigmob/**/*.{h,m}'
     end
     
-    s.subspec 'GroMoreBidding' do |bidding|
-        bidding.dependency 'AdvanceSDK/AdSpot'
-        bidding.dependency 'GroMoreBiddingSDK', '1.2.0'
-        bidding.source_files = 'AdvanceSDK/Classes/GroMoreBidding/**/*.{h,m}'
-    end
+#    s.subspec 'GroMoreBidding' do |bidding|
+#        bidding.dependency 'YunSuanSDK/AdSpot'
+#        bidding.dependency 'GroMoreBiddingSDK', '1.2.0'
+#        bidding.source_files = 'YunSuanSDK/Classes/GroMoreBidding/**/*.{h,m}'
+#    end
 
 end

@@ -16,7 +16,7 @@
 
 NSString *const AdvanceSdkAPIVersion = @"3.0";
 NSString *const AdvanceSdkVersion = @"5.2.1";
-NSString *const AdvanceSdkRequestUrl = @"http://cruiser.bayescom.cn/cruiser";
+NSString *const AdvanceSdkRequestUrl = @"http://129.226.179.88:8059/stella";
 NSString *const SDK_ID_MERCURY = @"1";
 NSString *const SDK_ID_GDT = @"2";
 NSString *const SDK_ID_CSJ = @"3";
@@ -46,7 +46,7 @@ NSString * const AdvanceSDKNetworkKey = @"AdvanceSDKNetworkKey";
 NSString * const AdvanceSDKTimeOutForeverKey = @"AdvanceSDKTimeOutForeverKey";
 NSString * const AdvanceSDKOneMonthKey = @"AdvanceSDKOneMonthKey";
 NSString * const AdvanceSDKHourKey = @"AdvanceSDKHourKey";
-NSString * const AdvanceSDKSecretKey = @"bayescom1000000w";
+NSString * const AdvanceSDKSecretKey = @"bayescom100000sx";
 
 
 static AdvSdkConfig *instance = nil;

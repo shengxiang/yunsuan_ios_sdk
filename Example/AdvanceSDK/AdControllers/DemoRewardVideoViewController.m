@@ -7,8 +7,8 @@
 //
 
 #import "DemoRewardVideoViewController.h"
-#import <AdvanceSDK/AdvanceRewardVideo.h>
-#import <AdvanceSDK/AdvRewardedVideoModel.h>
+#import <YunSuanSDK/AdvanceRewardVideo.h>
+#import <YunSuanSDK/AdvRewardedVideoModel.h>
 
 @interface DemoRewardVideoViewController () <AdvanceRewardedVideoDelegate>
 @property (nonatomic, strong) AdvanceRewardVideo *advanceRewardVideo;

@@ -7,7 +7,7 @@
 //
 
 #import "DemoSplashViewController.h"
-#import <AdvanceSDK/AdvanceSplash.h>
+#import <YunSuanSDK/AdvanceSplash.h>
 
 @interface DemoSplashViewController () <AdvanceSplashDelegate>
 @property(strong,nonatomic) AdvanceSplash *advanceSplash;

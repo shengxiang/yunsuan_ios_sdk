@@ -7,7 +7,7 @@
 //
 
 #import "DemoBannerViewController.h"
-#import <AdvanceSDK/AdvanceBanner.h>
+#import <YunSuanSDK/AdvanceBanner.h>
 
 @interface DemoBannerViewController () <AdvanceBannerDelegate>
 @property (nonatomic, strong) AdvanceBanner *advanceBanner;
