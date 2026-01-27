@@ -85,10 +85,10 @@ Pod::Spec.new do |s|
         sigmob.source_files =  'AdvanceSDK/Classes/Adapters/Sigmob/**/*.{h,m}'
     end
     
-#    s.subspec 'GroMoreBidding' do |bidding|
-#        bidding.dependency 'AdvanceSDK/AdSpot'
-#        bidding.dependency 'GroMoreBiddingSDK', '1.2.0'
-#        bidding.source_files = 'AdvanceSDK/Classes/GroMoreBidding/**/*.{h,m}'
-#    end
+    s.subspec 'GroMoreBidding' do |bidding|
+        bidding.dependency 'AdvanceSDK/AdSpot'
+        bidding.dependency 'GroMoreBiddingSDK', '1.2.0'
+        bidding.source_files = 'AdvanceSDK/Classes/GroMoreBidding/**/*.{h,m}'
+    end
 
 end
