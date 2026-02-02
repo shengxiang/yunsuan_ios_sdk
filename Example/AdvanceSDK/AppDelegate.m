@@ -29,7 +29,7 @@
     self.window.rootViewController = nav;
     [self.window makeKeyAndVisible];
     
-    [AdvSdkConfig shareInstance].appId = @"102768";
+    [AdvSdkConfig shareInstance].appId = @"100004";
     
     return YES;
 }

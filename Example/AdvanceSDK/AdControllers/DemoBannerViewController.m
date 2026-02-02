@@ -23,10 +23,10 @@
     self.initDefSubviewsFlag = YES;
     self.adShowView.hidden = NO;
     self.adspotIdsArr = @[
-        @{@"addesc": @"横幅-Bidding", @"adspotId": @"102768-10008517"},
-        @{@"addesc": @"横幅-倍业", @"adspotId": @"102768-10007790"},
-        @{@"addesc": @"横幅-穿山甲", @"adspotId": @"102768-10007800"},
-        @{@"addesc": @"横幅-优量汇", @"adspotId": @"102768-10007809"},
+//        @{@"addesc": @"横幅-Bidding", @"adspotId": @"102768-10000010"},
+//        @{@"addesc": @"横幅-倍业", @"adspotId": @"102768-10007790"},
+        @{@"addesc": @"横幅-穿山甲", @"adspotId": @"100004-10000019"},
+        @{@"addesc": @"横幅-优量汇", @"adspotId": @"100004-10000017"},
     ];
     self.btn1Title = @"加载并展示广告";
 }

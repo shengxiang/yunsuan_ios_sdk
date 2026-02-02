@@ -312,14 +312,17 @@
     
     NSError *parseError = nil;
     NSData *jsonData = [NSJSONSerialization dataWithJSONObject:deviceInfo options:NSJSONWritingPrettyPrinted error:&parseError];
+    
+    NSString *jsonString = [[NSString alloc] initWithData:jsonData encoding:NSUTF8StringEncoding];
+    ADVLog(@"Request Parameters: %@", jsonString);
+    
     NSURL *url = [NSURL URLWithString:AdvanceSdkRequestUrl];
     NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url cachePolicy:NSURLRequestReloadIgnoringLocalCacheData timeoutInterval:5];
     [request setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
     request.HTTPBody = jsonData;
     request.HTTPMethod = @"POST";
     NSURLSession *sharedSession = [NSURLSession sharedSession];
-    
-    
+        
     self.tkUploadTool.requestTime = [[NSDate date] timeIntervalSince1970] * 1000;
     
     
@@ -354,8 +357,11 @@
         return;
     }
     
+    NSString *result = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
+    ADVLog(@"result:%@",result);
+    
     AdvPolicyModel *a_model = [AdvPolicyModel adv_modelWithJSON:data];
-    ADVLog(@"[JSON]%@", [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:nil]);
+//    ADVLog(@"[JSON]%@", [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:nil]);
     // Parse Error
     if (!a_model) {
         if ([_delegate respondsToSelector:@selector(advPolicyServiceLoadFailedWithError:)]) {
