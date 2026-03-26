@@ -15,8 +15,8 @@
 @implementation AdvSdkConfig
 
 NSString *const AdvanceSdkAPIVersion = @"3.0";
-NSString *const AdvanceSdkVersion = @"5.2.1";
-NSString *const AdvanceSdkRequestUrl = @"http://129.226.179.88:8059/stella";
+NSString *const AdvanceSdkVersion = @"5.2.2";
+NSString *const AdvanceSdkRequestUrl = @"http://119.45.114.62:8059/stella";
 NSString *const SDK_ID_MERCURY = @"1";
 NSString *const SDK_ID_GDT = @"2";
 NSString *const SDK_ID_CSJ = @"3";
