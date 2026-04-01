@@ -12,7 +12,7 @@
 #import "AdvLog.h"
 #import "AdvanceAdapter.h"
 
-@interface CsjRewardVideoAdapter () <BUNativeExpressRewardedVideoAdDelegate, AdvanceAdapter>
+@interface CsjRewardVideoAdapter () <BUMNativeExpressRewardedVideoAdDelegate, AdvanceAdapter>
 @property (nonatomic, strong) BUNativeExpressRewardedVideoAd *csj_ad;
 @property (nonatomic, weak) AdvanceRewardVideo *adspot;
 @property (nonatomic, strong) AdvSupplier *supplier;

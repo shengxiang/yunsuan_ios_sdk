@@ -12,7 +12,7 @@
 #import "AdvanceBanner.h"
 #import "AdvanceAdapter.h"
 
-@interface CsjBannerAdapter () <BUNativeExpressBannerViewDelegate, AdvanceAdapter>
+@interface CsjBannerAdapter () <BUMNativeExpressBannerViewDelegate, AdvanceAdapter>
 @property (nonatomic, strong) BUNativeExpressBannerView *csj_ad;
 @property (nonatomic, weak) AdvanceBanner *adspot;
 @property (nonatomic, strong) AdvSupplier *supplier;

@@ -13,7 +13,7 @@
 #import "AdvRenderFeedAd.h"
 #import "AdvanceAdapter.h"
 
-@interface CsjRenderFeedAdapter () <BUNativeAdsManagerDelegate, AdvanceAdapter>
+@interface CsjRenderFeedAdapter () <BUMNativeAdsManagerDelegate, AdvanceAdapter>
 
 @property (nonatomic, strong) BUNativeAdsManager *csj_ad;
 @property (nonatomic, weak) AdvanceRenderFeed *adspot;

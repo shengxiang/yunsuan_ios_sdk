@@ -12,7 +12,7 @@
 #import "AdvLog.h"
 #import "AdvanceAdapter.h"
 
-@interface CsjSplashAdapter ()  <BUSplashAdDelegate, AdvanceAdapter>
+@interface CsjSplashAdapter ()  <BUMSplashAdDelegate, AdvanceAdapter>
 
 @property (nonatomic, strong) BUSplashAd *csj_ad;
 @property (nonatomic, weak) AdvanceSplash *adspot;
@@ -122,6 +122,7 @@
 - (void)csjAdDidClose {
     [_adspot.bottomLogoView removeFromSuperview];
     [self.csj_ad removeSplashView];
+    [self.csj_ad.mediation destoryAd];
     self.csj_ad = nil;
     
     if ([self.delegate respondsToSelector:@selector(splashDidCloseForSpotId:extra:)]) {

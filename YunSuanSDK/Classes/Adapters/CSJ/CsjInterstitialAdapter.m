@@ -12,7 +12,7 @@
 #import "AdvLog.h"
 #import "AdvanceAdapter.h"
 
-@interface CsjInterstitialAdapter () <BUNativeExpressFullscreenVideoAdDelegate, AdvanceAdapter>
+@interface CsjInterstitialAdapter () <BUMNativeExpressFullscreenVideoAdDelegate, AdvanceAdapter>
 @property (nonatomic, strong) BUNativeExpressFullscreenVideoAd *csj_ad;
 @property (nonatomic, weak) AdvanceInterstitial *adspot;
 @property (nonatomic, strong) AdvSupplier *supplier;

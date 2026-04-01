@@ -12,7 +12,7 @@ target 'AdvanceSDK_Example' do
 
   #集成穿山甲Adapter
   pod 'YunSuanSDK/CSJAdapter',  :path => '../'
-  pod 'Ads-CN-Beta', '7.3.0.4', :subspecs => ['BUAdSDK']
+  pod 'Ads-CN-Beta', '7.4.0.3', :subspecs => ['BUAdSDK', 'CSJMediation']
 
   #集成广点通Adapter
   pod 'YunSuanSDK/GDTAdapter', :path => '../'

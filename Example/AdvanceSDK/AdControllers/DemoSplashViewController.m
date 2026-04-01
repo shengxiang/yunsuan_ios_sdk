@@ -23,8 +23,8 @@
     self.adspotIdsArr = @[
 //        @{@"addesc": @"开屏-Bidding", @"adspotId": @"102768-10000010"},
 //        @{@"addesc": @"开屏-倍业", @"adspotId": @"102768-10007788"},
-        @{@"addesc": @"开屏-穿山甲", @"adspotId": @"100004-10000010"},
-        @{@"addesc": @"开屏-优量汇", @"adspotId": @"100004-10000016"},
+        @{@"addesc": @"开屏-穿山甲", @"adspotId": @"100008-10000048"},
+        @{@"addesc": @"开屏-优量汇", @"adspotId": @"100008-10000053"},
 //        @{@"addesc": @"开屏-快手", @"adspotId": @"102768-10007816"},
 //        @{@"addesc": @"开屏-百度", @"adspotId": @"102768-10007833"},
 //        @{@"addesc": @"开屏-Tanx", @"adspotId": @"102768-10009456"},
@@ -47,7 +47,7 @@
                                                        customExt:@{@"testExt": @1}
                                                   viewController:self];
     self.advanceSplash.delegate = self;
-//    self.advanceSplash.bottomLogoView = [self createBottomLogoView];
+    self.advanceSplash.bottomLogoView = [self createBottomLogoView];
     // 加载广告
     [self.advanceSplash loadAd];
 }

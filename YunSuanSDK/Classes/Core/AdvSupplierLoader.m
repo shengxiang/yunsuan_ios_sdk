@@ -90,6 +90,7 @@ static NSMutableDictionary *_initializedDict = nil;
         
         id config = ((id (*)(id, SEL))objc_msgSend)(NSClassFromString(@"BUAdSDKConfiguration").class, NSSelectorFromString(@"configuration"));
         ((void (*)(id, SEL, NSString *))objc_msgSend)(config, NSSelectorFromString(@"setAppID:"), supplier.mediaid);
+        ((void (*)(id, SEL, BOOL))objc_msgSend)(config, NSSelectorFromString(@"setUseMediation:"), YES);
         // 定义block
         void (^completionHandler)(BOOL success, NSError *error) = ^void (BOOL success, NSError *error) {
             /// 穿山甲是异步初始化，回调需要切换到主线程

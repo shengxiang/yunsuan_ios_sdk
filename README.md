@@ -89,7 +89,7 @@ target '你的项目名称' do
   
   # 引入穿山甲Adapter
   pod 'YunSuanSDK/CSJAdapter'
-  pod 'Ads-CN-Beta', '7.3.0.4', :subspecs => ['BUAdSDK'] #指定你想要的版本号
+  pod 'Ads-CN-Beta', '7.4.0.3', :subspecs => ['BUAdSDK', 'CSJMediation'] #指定你想要的版本号
   
   # 引入优量汇Adapter
   pod 'YunSuanSDK/GDTAdapter'

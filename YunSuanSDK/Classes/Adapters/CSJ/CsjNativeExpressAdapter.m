@@ -13,7 +13,7 @@
 #import "AdvanceNativeExpressAd.h"
 #import "AdvanceAdapter.h"
 
-@interface CsjNativeExpressAdapter () <BUNativeExpressAdViewDelegate, BUCustomEventProtocol, AdvanceAdapter>
+@interface CsjNativeExpressAdapter () <BUMNativeExpressAdViewDelegate, BUCustomEventProtocol, AdvanceAdapter>
 @property (nonatomic, strong) BUNativeExpressAdManager *csj_ad;
 @property (nonatomic, weak) AdvanceNativeExpress *adspot;
 @property (nonatomic, strong) AdvSupplier *supplier;

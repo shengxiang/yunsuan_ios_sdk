@@ -20,14 +20,14 @@
     self.initDefSubviewsFlag = YES;
     self.adspotIdsArr = @[
         //@{@"addesc": @"插屏-GroMore", @"adspotId": @"102768-10008588"},
-        @{@"addesc": @"插屏-Bidding", @"adspotId": @"102768-10008520"},
-        @{@"addesc": @"插屏-倍业", @"adspotId": @"102768-10007791"},
-        @{@"addesc": @"插屏-穿山甲", @"adspotId": @"102768-10007801"},
-        @{@"addesc": @"插屏-优量汇", @"adspotId": @"102768-10007810"},
-        @{@"addesc": @"插屏-快手", @"adspotId": @"102768-10007818"},
-        @{@"addesc": @"插屏-百度", @"adspotId": @"102768-10007836"},
-        @{@"addesc": @"插屏-Tanx", @"adspotId": @"102768-10009460"},
-        @{@"addesc": @"插屏-Sigmob", @"adspotId": @"102768-10011980"}
+        //@{@"addesc": @"插屏-Bidding", @"adspotId": @"102768-10008520"},
+//        @{@"addesc": @"插屏-倍业", @"adspotId": @"102768-10007791"},
+        @{@"addesc": @"插屏-穿山甲", @"adspotId": @"100008-10000051"},
+        @{@"addesc": @"插屏-优量汇", @"adspotId": @"100008-10000056"},
+//        @{@"addesc": @"插屏-快手", @"adspotId": @"102768-10007818"},
+//        @{@"addesc": @"插屏-百度", @"adspotId": @"102768-10007836"},
+//        @{@"addesc": @"插屏-Tanx", @"adspotId": @"102768-10009460"},
+//        @{@"addesc": @"插屏-Sigmob", @"adspotId": @"102768-10011980"}
     ];
     self.btn1Title = @"加载并展示广告";
 //    self.btn2Title = @"展示广告";

@@ -427,6 +427,8 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-AdvanceSDK_Example/Pods-AdvanceSDK_Example-resources.sh",
 				"${PODS_ROOT}/Ads-CN-Beta/SDK/CSJAdSDK.bundle",
+				"${PODS_ROOT}/BUTTSDKFramework/TTSDKFramework/TTSDKLiveBase/Resources/VeLive.bundle",
+				"${PODS_ROOT}/BUTTSDKFramework/TTSDKFramework/TTSDKPlayerCoreLiveLite/Resources/ttplayer.metallib",
 				"${PODS_ROOT}/BaiduMobAdSDK/baidumobadsdk.bundle",
 				"${PODS_ROOT}/TanxSDK/TanxSDK/TanxSDK.library/TanxSDK.xcframework/ios-arm64/TanxSDK.framework/TanxID.bundle/back_left.png",
 				"${PODS_ROOT}/TanxSDK/TanxSDK/TanxSDK.library/TanxSDK.xcframework/ios-arm64/TanxSDK.framework/TanxID.bundle/feed_close@2x.png",
@@ -452,6 +454,8 @@
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/CSJAdSDK.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/VeLive.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ttplayer.metallib",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/baidumobadsdk.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/back_left.png",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/feed_close@2x.png",
@@ -487,6 +491,17 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-AdvanceSDK_Example/Pods-AdvanceSDK_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/BUTTSDKFramework/Core/TTSDKCore.framework/TTSDKCore",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/BUTTSDKFramework/LiveBase/TTSDKLiveBase.framework/TTSDKLiveBase",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/BUTTSDKFramework/LivePlayer/Lite/TTSDKLivePlayerLite.framework/TTSDKLivePlayerLite",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/BUTTSDKFramework/LivePull-VolcLog/TTSDKLivePullVolcLog.framework/TTSDKLivePullVolcLog",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/BUTTSDKFramework/PlayerCore/LiveLite/TTSDKPlayerCoreLiveLite.framework/TTSDKPlayerCoreLiveLite",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/BUTTSDKFramework/Reachability/TTSDKReachability.framework/TTSDKReachability",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/BUTTSDKFramework/Strategy/Lite/TTSDKStrategyLite.framework/TTSDKStrategyLite",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/BUTTSDKFramework/TTFFmpeg/LiveLite/TTFFmpeg.framework/TTFFmpeg",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/BUTTSDKFramework/TTFFmpeg/LiveLite/TTSDKTTFFmpegLiveLite.framework/TTSDKTTFFmpegLiveLite",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/BUTTSDKFramework/VolcLog/TTSDKVolcLog.framework/TTSDKVolcLog",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/BUTTSDKFramework/VolcLog/VolcBaseLog.framework/VolcBaseLog",
 				"${PODS_XCFRAMEWORKS_BUILD_DIR}/GDTMobSDK/GDTMobSDK.framework/GDTMobSDK",
 				"${PODS_XCFRAMEWORKS_BUILD_DIR}/GDTMobSDK/Tquic.framework/Tquic",
 				"${PODS_XCFRAMEWORKS_BUILD_DIR}/KSAdSDK/KSAdSDK.framework/KSAdSDK",
@@ -495,6 +510,17 @@
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TTSDKCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TTSDKLiveBase.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TTSDKLivePlayerLite.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TTSDKLivePullVolcLog.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TTSDKPlayerCoreLiveLite.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TTSDKReachability.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TTSDKStrategyLite.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TTFFmpeg.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TTSDKTTFFmpegLiveLite.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TTSDKVolcLog.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/VolcBaseLog.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GDTMobSDK.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Tquic.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KSAdSDK.framework",
