@@ -48,6 +48,9 @@ extern NSString *const AdvanceSDKSecretKey;
 /// SDK版本
 + (NSString *)sdkVersion;
 
+/// 设置请求域名地址
+@property (nonatomic, copy) NSString *doaminAddress;
+
 /// appid 从平台获取
 @property (nonatomic, copy) NSString *appId;
 

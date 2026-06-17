@@ -316,7 +316,7 @@
     NSString *jsonString = [[NSString alloc] initWithData:jsonData encoding:NSUTF8StringEncoding];
     ADVLog(@"Request Parameters: %@", jsonString);
     
-    NSURL *url = [NSURL URLWithString:AdvanceSdkRequestUrl];
+    NSURL *url = [NSURL URLWithString:[AdvSdkConfig shareInstance].doaminAddress ?: AdvanceSdkRequestUrl];
     NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url cachePolicy:NSURLRequestReloadIgnoringLocalCacheData timeoutInterval:5];
     [request setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
     request.HTTPBody = jsonData;

@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
     
     s.name             = 'YunSuanSDK'
-    s.version          = '5.2.3'
+    s.version          = '5.2.5'
     s.license          = { :type => 'MIT', :file => 'LICENSE' }
     s.summary          = 'iOS YunSuanSDK'
     s.description      = <<-DESC
