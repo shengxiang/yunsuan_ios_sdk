@@ -81,35 +81,35 @@ platform :ios, '12.0'
 target '你的项目名称' do
 
   # 引入聚合SDK（必须）
-  pod 'YunSuanSDK', '5.2.1' #指定你想要的版本号
+  pod 'YunSuanSDK', '5.2.5' #指定你想要的版本号
   
   # 引入倍业Adapter
   pod 'YunSuanSDK/MercuryAdapter'
-  pod 'MercurySDK', '4.6.3' #指定你想要的版本号
+  pod 'MercurySDK', '4.7.3' #指定你想要的版本号
   
   # 引入穿山甲Adapter
   pod 'YunSuanSDK/CSJAdapter'
-  pod 'Ads-CN-Beta', '7.4.0.3', :subspecs => ['BUAdSDK', 'CSJMediation'] #指定你想要的版本号
+  pod 'Ads-CN-Beta', '7.6.0.4', :subspecs => ['BUAdSDK', 'CSJMediation'] #指定你想要的版本号
   
   # 引入优量汇Adapter
   pod 'YunSuanSDK/GDTAdapter'
-  pod 'GDTMobSDK', '4.15.65' #指定你想要的版本号
+  pod 'GDTMobSDK', '4.15.90' #指定你想要的版本号
   
   # 引入快手Adapter
   pod 'YunSuanSDK/KSAdapter'
-  pod 'KSAdSDK', '4.11.20.1' #指定你想要的版本号
+  pod 'KSAdSDK', '5.4.10.1' #指定你想要的版本号
   
   # 引入百度Adapter
   pod 'YunSuanSDK/BDAdapter'
-  pod 'BaiduMobAdSDK', '10.022' #指定你想要的版本号
+  pod 'BaiduMobAdSDK', '10.051' #指定你想要的版本号
   
   # 引入TanxAdapter
   pod 'YunSuanSDK/TanxAdapter'
-  pod 'TanxSDK', '3.7.21' #指定你想要的版本号
+  pod 'TanxSDK', '3.7.30' #指定你想要的版本号
   
   # 引入SigMobAdapter
   pod 'YunSuanSDK/SigmobAdapter'
-  pod 'SigmobAd-iOS', '4.20.5' #指定你想要的版本号
+  pod 'SigmobAd-iOS', '4.20.23' #指定你想要的版本号
   
 end
 ```
@@ -145,14 +145,17 @@ $ pod install --repo-update
 ![1DFAFEBE-74DC-44D4-BFCC-EF0E194C5D45](./_docs/imgs/1DFAFEBE-74DC-44D4-BFCC-EF0E194C5D45.png)
 
 ## 全局初始化设置
-<span style="background-color: #297497"><font  color=#FFFFF>appId必须要在具体广告位初始化之前设置</font></span>
+ - <span style="background-color: #297497"><font  color=#FFFFF>appId必须要在具体广告位初始化之前设置</font></span>
+ - 默认服务器请求地址为`http://119.45.114.62:8059/stella`，也可通过接口自行设置
 
 ```
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 
     ...
     // 设置appid
-    [AdvSdkConfig shareInstance].appId = @"your appId";    
+    [AdvSdkConfig shareInstance].appId = @"your appId";  
+    // 设置服务请求地址 [可选]
+    [AdvSdkConfig shareInstance].domainAddress = @"your domain address"; 
     return YES;
 }
 ```
